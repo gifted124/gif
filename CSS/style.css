@@ -1,0 +1,1828 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6;
+  width: 100%;
+}
+.newbody{
+  position: relative;
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6;
+  width: 100%;
+  overflow: hidden;
+}
+.freeShipping {
+  height: 2.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding:.3em 0;
+}
+.freeShipping {
+ color: white;
+ font-size: .62rem;
+ letter-spacing: 1.5px;
+ font-weight: bold;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2em 3em 2em 2em;
+  margin: auto;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2em 3em 2em 2em;
+  margin: auto;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0px -2px 10px 4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px -2px 10px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px -2px 10px 4px rgba(0,0,0,0.75);
+}
+.languageSelect{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+.langIcon{
+  margin-left: 1.5em;
+   height: 22px;
+  width: 22px;
+}
+.logoTxt{
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: black;
+  letter-spacing: .65rem;
+}
+.linkIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  font-size: 1.35rem;
+}
+.mm{
+  padding-bottom: 13px;
+}
+img{
+  width: 25px;
+}
+.fh{
+  background-color: #f8a1c5;
+  width: 12px;
+  height: 10px;
+  padding-left: 10px;
+  margin-top: -16px;
+  margin-left: 15px;
+  border-radius: 9px;
+}
+.linkIcon a{
+  font-size: 1.35rem;
+}
+
+.mobile{
+  display: none;
+}
+.mobile .mobileHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  padding-bottom: 2px;
+  margin: auto;
+  border-bottom: 1px solid;  
+}
+.mobile .searchDiv{
+  width: 95%;
+  margin: auto;
+  padding: 2px 0;
+}
+.navLink{
+  width: 70%;
+  margin: .5em auto 0 auto;
+  padding: 0 0 2em 0;
+}
+nav{
+  width: 100%;
+}
+ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li{ 
+  list-style: none;
+}
+.ppn{
+    width: 70px;
+    height: 100px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-size: .8rem;
+}
+.gap{
+  margin-left: 7px;
+}
+a:hover{  
+  color: rgba(0, 0, 0, 0.541);
+}
+main{
+  width: 95%;
+  margin: auto;
+  /* background-color: red; */
+}
+.bgImage{
+  width: 100%;
+  margin: auto;
+}
+.bg1{ 
+  height: 98vh;
+}
+
+.three-column-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  margin: 3em auto;
+  gap: 3em;
+  
+}
+.three-column-grid img{
+  width: 100px;
+}
+
+.grid-Img{
+  margin: auto;
+  width: 100%;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.bag1{
+  height: 70vh;
+ background-image: url('https://jackiesmith.com/cdn/shop/files/0020919GBC68Y_BAJA_A_4bbf0c74-62ae-47db-9663-14abbcfb62a1.jpg?v=1734028180&width=720');
+}
+.bag1:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/0020919GBC68Y_BAJA_B_94a7272b-0903-4500-9934-fa0e2f18aa45.jpg?v=1734028180&width=720');
+}
+
+.bag11{
+  height: 70vh;
+ background-image: url('https://jackiesmith.com/cdn/shop/files/CP00724PBA01K94_BAJA_A.jpg?v=1723258441&width=720');
+}
+.bag11:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP00724PBA01K94_BAJA_B.jpg?v=1723258444&width=720');
+}
+
+.bag2{
+  height: 70vh;
+  background-image: url('https://cdn.shopify.com/s/files/1/0491/4541/3794/files/0020919GBE42V_BAJA_A_b3226ea8-42b9-4d80-9b1b-58f63e829cbd_1080x.jpg?v=1734027368'); 
+}
+.bag2:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/0020919GBE42V_BAJA_B_1eec0cdb-2154-48a5-a1e2-3b7fe8ab16a0.jpg?v=1734027368&width=720');
+}
+.bag22{
+  height: 70vh;
+  background-image: url('https://cdn.shopify.com/s/files/1/0491/4541/3794/files/CP00950MRA01R98_BAJA_A_1080x.jpg?v=1701490414'); 
+}
+.bag22:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP00950MRA01R98_BAJA_B.jpg?v=1701490412&width=720');
+}
+.superBag{
+  position: absolute;
+  right: 50px;
+}
+
+.bag3{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/0020919GBB65Q_BAJA_A_95932aa9-06fc-4bf5-8128-4a64c1b369ed.jpg?v=1734026251&width=720'); 
+}
+.bag33{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP10751PYA01K98_ALTA_A.jpg?v=1721933402&width=720'); 
+}
+.bag33:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP10751PYA01K98_ALTA_B.jpg?v=1721933402&width=720'); 
+}
+.bag01{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP02242MRA01K98_BAJA_A.jpg?v=1709129996&width=720'); 
+}
+.bag01:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP02242MRA01K98_BAJA_B.jpg?v=1709129996&width=720'); 
+}
+.bag02{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP10713NEA01N94_BAJA_A.jpg?v=1715313996&width=720'); 
+}
+.bag03{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/GF02002GNA01N98_BAJA_A.jpg?v=1702777160&width=720'); 
+}
+.bag03:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/GF02002GNA01N98_BAJA_B.jpg?v=1702777158&width=720'); 
+}
+.bag04{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP01991MIA01098_BAJA_B.jpg?v=1698975156&width=720'); 
+}
+.bag05{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CJJ2080AGA010_BAJA_A_8191297f-974c-4ff0-b11a-7eb49eb84d85.jpg?v=1718046879&width=720'); 
+}
+.bag05:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CJJ2080AGA010_BAJA_E.jpg?v=1718369600&width=720'); 
+}
+.bag06{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CJJ2218AGA280_BAJA_A_5a27bfa2-be91-4f0a-ac3a-d9862ec260e9.jpg?v=1717529465&width=720'); 
+}
+.bag06:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CJJ2218AGA280_BAJA_E_7aac650c-f3ce-43f5-93d3-a18a7b65e1da.jpg?v=1718369542&width=720'); 
+}
+.bag07{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/0020526NAA01Z_BAJA_A_584761f6-82a5-43bf-a063-e10c4fdc48c5.jpg?v=1698988756&width=720'); 
+}
+.bag07:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/0020526NAA01Z_BAJA_B_89f10769-ad7e-45f6-ba5e-fa9d26979c87.jpg?v=1698988752&width=720'); 
+}
+.bag08{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP00325GSA01N99_BAJA_A_79c2b0aa-66b9-40f3-aa98-2289804f3d89.jpg?v=1716831028&width=720'); 
+}
+.bag08:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP00325GSA01N99_BAJA_B_ae5a1f71-dac3-4469-bb94-64fa05bfbbbd.jpg?v=1716831028&width=720'); 
+}
+.bag09{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02241MIA01N98_ALTA_A_1.jpg?v=1710996714&width=720'); 
+}
+.bag09:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02241MIA01N98_BAJA_B.jpg?v=1710940094&width=720'); 
+}
+.bag10{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP00130GSA01099_BAJA_A_4ccd4224-7f8a-4408-bfa2-2f6b1778d152.jpg?v=1716830975&width=720'); 
+}
+.bag10:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP00130GSA01099_BAJA_B_eb6d011b-fed0-4510-a84e-fc1cd43fe09a.jpg?v=1716830975&width=720'); 
+}
+.bag21{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CJ52139DEA010_BAJA_A.jpg?v=1699243917&width=720'); 
+}
+.bag21:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/MN02261DEA01099_BAJA_I_12fc048e-c1c8-4c61-9ee5-55e48f67e126.jpg?v=1712987042&width=720'); 
+}
+.bag21{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CJ52139DEA010_BAJA_A.jpg?v=1699243917&width=720'); 
+}
+.bag21:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/MN02261DEA01099_BAJA_I_12fc048e-c1c8-4c61-9ee5-55e48f67e126.jpg?v=1712987042&width=720'); 
+}
+.bag23{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/AF00361GNA01P99_BAJA_A.jpg?v=1699153268&width=720'); 
+}
+.bag23:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/AF00361GNA01P99_BAJA_B.jpg?v=1699153266&width=720'); 
+}
+.bag24{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/AF00361GNA01P99_BAJA_A.jpg?v=1699153268&width=720'); 
+}
+.bag24:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/AF00361GNA01P99_BAJA_B.jpg?v=1699153266&width=720'); 
+}
+.bag25{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CN00731SFA01U99_BAJA_A_41914ce7-ad8a-4814-8e37-cc38e0ac72fe.jpg?v=1726165015&width=720'); 
+}
+.bag25:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CN00731SFA01U99_BAJA_B_b61afce0-cbd9-4986-b1ae-0d288aba26a2.jpg?v=1726165015&width=720'); 
+}
+.bag26{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP12013TJA01R94_BAJA_A.jpg?v=1701747188&width=720'); 
+}
+.bag26:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP12013TJA01R94_BAJA_C.jpg?v=1701834776&width=720'); 
+}
+.bag001{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP10713PYA01099_BAJA_A.jpg?v=1699409545&width=720'); 
+}
+.bag002{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/DMN2287DEA010_BAJA_A_357a63ec-affd-4413-949a-44a17ee228c3.jpg?v=1726692495&width=720'); 
+}
+.bag002:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/DMN2288AGA010_BAJA_E_abdd909e-df4a-4431-8488-e7b93e73252d.jpg?v=1718368563&width=720'); 
+}
+.bag003{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CJ50816NAA01Q_BAJA_A.jpg?v=1715745898&width=720'); 
+}
+.bag003:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CJ50816NAA01Q_BAJA_G.jpg?v=1715745895&width=720'); 
+}
+.bag004{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP10713NEA01N94_BAJA_A.jpg?v=1715313996&width=720'); 
+}
+.bag004:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP11979NEA01N94_BAJA_B_992ea261-dadc-4937-ae1d-c58e9bc20463.jpg?v=1699159624&width=720'); 
+}
+.bag005{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP00763AGA01K94_BAJA_A.jpg?v=1701180587&width=720'); 
+}
+.bag006:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP01981MJA01R98_BAJA_A.jpg?v=1701490607&width=720'); 
+}
+.bag006{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP01981MJA01R98_BAJA_B.jpg?v=1701490605&width=720'); 
+}
+.bag007{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02015MIA01K98_BAJA_A.jpg?v=1701397270&width=720'); 
+}
+.bag008:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02278NPA01K98_BAJA_B.jpg?v=1714659934&width=720'); 
+}
+.bag008{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02278NPA01K98_BAJA_A.jpg?v=1714659934&width=720'); 
+}
+.bag009:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/AF00361GNA01U99_baja_b_5a5c64b4-8cb7-4622-8eef-7486fd655152.jpg?v=1699153284&width=720'); 
+}
+.bag009{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/AF00361GNA01U99_baja_a_85f6db35-ff05-4c35-afc1-e5d679f34d20.jpg?v=1699153286&width=720'); 
+}
+
+.bag010:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/Street09-04-2024_15copia.jpg?v=1712987155&width=720'); 
+}
+.bag010{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/DMN2099DEA01N_BAJA_A.jpg?v=1712987157&width=720'); 
+}
+.bag011:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/DMN2287DEA015_BAJA_E.jpg?v=1718370679&width=720'); 
+}
+.bag011{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/DMN2287DEA010_BAJA_A_357a63ec-affd-4413-949a-44a17ee228c3.jpg?v=1726692495&width=720'); 
+}
+.bag012:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/DMN2287DEA010_BAJA_E.jpg?v=1726761968&width=720'); 
+}
+.bag012{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/DMN2287DEA015_BAJA_A.jpg?v=1718370679&width=720'); 
+}
+.bag013:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/DMN2289AGA010_BAJA_E.jpg?v=1718368640&width=720'); 
+}
+.bag013{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/DMN2289AGA010_BAJA_A_a002b7cb-a098-43e3-9b99-536fc9dcbfe6.jpg?v=1718046896&width=720'); 
+}
+.bag014:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/GF02031GNA01598_BAJA_B.jpg?v=1699245171&width=720'); 
+}
+.bag014{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/GF02031GNA01598_BAJA_A.jpg?v=1699245174&width=720'); 
+}
+.bag015:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP01039PYA01K99_BAJA_B_3a658a7b-108c-44a5-ae6b-e0f9e3e03a8b.jpg?v=1699151488&width=720'); 
+}
+.bag015{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP01039PYA01K99_BAJA_A12.25.05.jpg?v=1699151492&width=720'); 
+}
+.bag016:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP10951MJA01K98_BAJA_B.jpg?v=1701399922&width=720'); 
+}
+.bag016{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CN02001SFA01K98_BAJA_B_095144d4-52e2-42e2-9bea-ffdd76ff624b.jpg?v=1716831005&width=72'); 
+}
+
+.bag017:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP10951MJA01K98_BAJA_B.jpg?v=1701399922&width=720'); 
+}
+.bag017{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP10951MJA01K98_BAJA_A.jpg?v=1701399924&width=720'); 
+}
+
+.bag018:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP12064MRA01K98_BAJA_B.jpg?v=1701490961&width=720'); 
+}
+.bag018{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP12064MRA01K98_BAJA_A.jpg?v=1701490963&width=720'); 
+}
+.bag019:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP12063MRA01R98_BAJA_B.jpg?v=1701490888&width=720'); 
+}
+.bag019{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP12063MRA01R98_BAJA_A.jpg?v=1701490890&width=720'); 
+}
+.bag020:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/BL00114GRA01199_BAJA_B.jpg?v=1684002828&width=720'); 
+}
+.bag020{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/BL00114GRA01199_BAJA_A.jpg?v=1699159714&width=720'); 
+}
+.bag021:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CN00114GNA01098_BAJA_B.jpg?v=1700714429&width=720'); 
+}
+.bag021{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CN00114GNA01098_BAJA_A.jpg?v=1700714431&width=720'); 
+}
+.bag022:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP12110MIA01K98_BAJA_C.jpg?v=1701397444&width=720'); 
+}
+.bag022{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP12110MIA01K98_BAJA_B.jpg?v=1701397446&width=720'); 
+}
+.bag023:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP02148CTA01100_BAJA_B.jpg?v=1704302944&width=720'); 
+}
+.bag023{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP02148CTA01100_BAJA_A.jpg?v=1704302944&width=720'); 
+}
+.bag024:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/DMN2287DEA01N_BAJA_E.jpg?v=1718368355&width=720'); 
+}
+.bag024{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/DMN2287DEA010_BAJA_A_357a63ec-affd-4413-949a-44a17ee228c3.jpg?v=1726692495&width=720'); 
+}
+
+.bag022:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02096CUA01299_BAJA_B.jpg?v=1718945509&width=720'); 
+}
+.bag022{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02096CUA01299_BAJA_A.jpg?v=1718945512&width=720'); 
+}
+
+.bag023:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP12048MNA01099_BAJA_b_79ef7090-fdd2-4cda-bd59-6e61c53993ff.jpg?v=1698980824&width=720'); 
+}
+.bag023{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP12048MNA01099_BAJA_a_b7f0f501-6e17-457c-9e72-19b05084f6c2.jpg?v=1698980826&width=720'); 
+}
+.bag024:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP11042MJA01K98_BAJA_B.jpg?v=1701490797&width=720'); 
+}
+.bag024{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP11042MJA01K98_BAJA_B.jpg?v=1701490797&width=720'); 
+}
+
+.bag028:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP12062MRA01R98_BAJA_B.jpg?v=1701490826&width=720'); 
+}
+.bag028{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP12062MRA01R98_BAJA_A.jpg?v=1701490828&width=720'); 
+}
+
+
+.bag029:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP01049PBA01K94_BAJA_B.jpg?v=1729654519&width=720'); 
+}
+.bag029{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP01049PBA01K94_BAJA_A.jpg?v=1729654515&width=720'); 
+}
+.bag030:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP02238MRA01N98_BAJA_B.jpg?v=1706811236&width=720'); 
+}
+.bag030{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP02238MRA01N98_BAJA_B.jpg?v=1706811236&width=720'); 
+}
+
+.bag031:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02111NEA01N94_BAJA_B.jpg?v=1716274481&width=720'); 
+}
+.bag031{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02111NEA01N94_BAJA_A.jpg?v=1716274483&width=720'); 
+}
+
+.bag032:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CN00730SFA01K99_BAJA_B_e997d3c5-5328-4685-a673-6b5ee62be46d.jpg?v=1716963578&width=720'); 
+}
+.bag032{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CN00730SFA01K99_BAJA_A_3344c6f1-cac0-455f-9e6b-0fc3278e8e80.jpg?v=1716830982&width=720'); 
+}
+.bag033:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP00724MNA01Z98_BAJA_B.jpg?v=1698991796&width=720'); 
+}
+.bag033{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP01975MNA01Z98_BAJA_A.jpg?v=1698991957&width=720'); 
+}
+
+.bag034:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP01035MNA01N99_BAJA_B_a2817cf0-b3f4-4c97-9a37-60cb3dcc372c.jpg?v=1699234209&width=720'); 
+}
+.bag034{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP01035MNA01N99_BAJA_A_43599144-48c2-4f97-9b54-2b5221ebd96d.jpg?v=1699234211&width=720'); 
+}
+.bag035:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP02032MNA01N99_baja_b_3d953829-b7e3-4c4b-a845-cafeb125bebf.jpg?v=1700789302&width=720'); 
+}
+.bag035{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP02032MNA01N99_baja_a_bdf097cf-bf02-4cb6-9168-03d833e74c4e.jpg?v=1700789304&width=720'); 
+}
+.bag036:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP02032MNA01N99_baja_a_bdf097cf-bf02-4cb6-9168-03d833e74c4e.jpg?v=1700789304&width=720'); 
+}
+.bag036{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CN00730SFA01K99_BAJA_A_3344c6f1-cac0-455f-9e6b-0fc3278e8e80.jpg?v=1716830982&width=720'); 
+}
+
+.bag037:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP02230NEB43K94_BAJA_B.jpg?v=1705505890&width=720'); 
+}
+.bag037{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CP02230NEB43K94_BAJA_B.jpg?v=1705505890&width=720'); 
+}
+.bag038:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/LD02282CRA01098_BAJA_B.jpg?v=1709185195&width=720'); 
+}
+.bag038{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/LD02282CRA01098_BAJA_A.jpg?v=1709185198&width=720'); 
+}
+.bag039:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CN10752GNA01K99_BAJA_B.jpg?v=1709579759&width=720'); 
+}
+.bag039{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/CN10752GNA01K99_BAJA_A.jpg?v=1709579759&width=720'); 
+}
+
+.bag040:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02243MOA01N98_BAJA_B_29523c19-a4bf-46d9-a6b9-8d88765a8d9e.jpg?v=1732909858&width=720'); 
+}
+.bag040{
+  height: 70vh;
+  background-image: url('https://cdn.shopify.com/s/files/1/0491/4541/3794/files/CP02243MOA01N98_BAJA_A_7aa3b2c7-b0c9-4ab9-b000-e029e6f95a0c_1080x.jpg?v=1732909858'); 
+}
+.bag041:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP01982MOA01N98_BAJA_B_2b990d41-9d7e-43c3-b593-28feacb5aef8.jpg?v=1733166006&width=720'); 
+}
+.bag041{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP01982MOA01N98_BAJA_A_d6206894-4e42-4ad7-b3a0-6e2404a6e74a.jpg?v=1733166006&width=720'); 
+}
+.bag042:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/2W02184CRA01K99_BAJA_B.jpg?v=1706811308&width=720'); 
+}
+.bag042{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/products/2W02184CRA01K99_BAJA_A.jpg?v=1706811308&width=720'); 
+}
+.grid-txt p{
+  font-size: .8rem;
+  text-align: center;
+}
+.soldout{
+  padding-left: 800px;
+}
+.two-column-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: 3em auto 0 auto;
+  gap: 3em;
+}
+.two-column-grid-item img{
+  margin: auto;
+  width: 100%;
+  cursor: pointer;
+}
+.mobile-img2 img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 98vh;
+}
+
+.claire1{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/0020531DEA87Z_BAJA_A_cd57298e-f3a0-4f2e-bacc-a48fd247f81c.jpg?v=1733944690&width=720');
+}
+.claire1:hover{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/0020531DEA87Z_BAJA_B_b5e0e8f4-65e2-46de-8cc6-8bcbc26c4720.jpg?v=1734025841&width=720');
+}
+
+.claire2{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/VS70542LIA90F_BAJA_A_cff24e38-e179-4f3f-a9ef-74e5000ee492.jpg?v=1733163131&width=900');
+}
+.claire2:hover{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/VS70542LIA90F_BAJA_F.jpg?v=1733255908&width=720');
+}
+
+.claire3{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/0020531DED51A_BAJA_B_1490180d-0e39-4a9d-b344-720798d5367a.jpg?v=1734025811&width=720');
+}
+.claire3:hover{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/0020531DED51A_BAJA_B_1490180d-0e39-4a9d-b344-720798d5367a.jpg?v=1734025811&width=720');
+}
+
+.cloth1{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02340CTD01Q00_BAJA_A_229736a3-ec4d-4679-9d19-d5158f2382cc.jpg?v=1733944584&width=720');
+}
+.cloth1:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02340CTD01Q00_BAJA_B_7bcbc96e-5200-48d9-bf17-9b3f235b2ea7.jpg?v=1733949787&width=720');
+}
+.cloth2{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02340CTC03J00_BAJA_A_5f8d3d22-9d6b-4ac4-97d0-164b9cde78e5.jpg?v=1733944575&width=720');
+}
+.cloth2:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02340CTC03J00_BAJA_B_366d7343-9f5f-4de4-8a44-784e8684f8a4.jpg?v=1733950826&width=720');
+}
+.cloth3{
+  height: 70vh;
+  background-image: url('https://cdn.shopify.com/s/files/1/0491/4541/3794/files/CP02340CTD02K00_BAJA_A_841366ae-0bc9-4c52-ad3e-80170f0c69f0_1080x.jpg?v=1733944562');
+}
+.cloth3:hover{
+  height: 70vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02340CTD02K00_BAJA_B_c2232ba7-5657-4f13-afe1-a800c3512f75.jpg?v=1734010202&width=720');
+}
+
+.wendy1{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/VS72151LIC420_BAJA_A_57e71aad-3113-4ce4-93ae-19cb4d8d76e5.jpg?v=1733944748&width=720');
+}
+.wendy1:hover{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/0020919GBE42V_BAJA_D_8bf262a7-73a3-4b9e-9f2b-3675d9fea993.jpg?v=1734012843&width=720');
+}
+
+.wendy2{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/VS72151LIE050_BAJA_A_820412bb-1a8b-4e5d-b602-88e464fef2b5.jpg?v=1733944762&width=720');
+}
+.wendy2:hover{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/VS72151LIE050_BAJA_D.jpg?v=1734015739&width=720');
+}
+
+.wendy3{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/VS72151LIC430_BAJA_A_3a27e88a-9fa7-48cd-8284-d5f8181df1c0.jpg?v=1733944755&width=720');
+}
+
+
+.ballerinas1{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02336CUA01K99_BAJA_A_999e00a0-b2c3-47bd-84ac-89a21e294c2e.jpg?v=1732909894&width=720');
+}
+.ballerinas1:hover{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02336CUA01K99_BAJA_B_77292b73-6e89-40f8-a1db-b41234b89c1a.jpg?v=1732909894&width=720');
+}
+
+.ballerinas2{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02336CUA35Q99_BAJA_A_0c68bf6b-81d6-40d6-96fa-da52bac8f8c8.jpg?v=1732909901&width=720');
+}
+.ballerinas2:hover{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02336CUA35Q99_BAJA_B_c4245443-63e7-43e6-b9dd-afbce515f235.jpg?v=1732909901&width=720');
+}
+
+.ballerinas3{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02336CUC76V99_BAJA_A_49518448-7bd9-49fb-8a07-86a56bcd3da0.jpg?v=1732909908&width=720');
+}
+.ballerinas3:hover{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02336CUC76V99_BAJA_B_727045b9-0db5-4635-ba13-b015617bf6fa.jpg?v=1732909908&width=720');
+}
+
+.baguette1{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02379GSA01099_BAJA_A.jpg?v=1732909865&width=720');
+}
+.baguette1:hover{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02379GSA01099_BAJA_B.jpg?v=1732909865&width=720');
+}
+
+.baguette2{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02379GSB65099_BAJA_A.jpg?v=1732909884&width=720');
+}
+.baguette2:hover{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02379GSB65099_BAJA_B.jpg?v=1732909885&width=720');
+}
+
+.baguette3{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02379GSB44099_BAJA_B.jpg?v=1732909878&width=720');
+}
+.baguette3:hover{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/CP02379GSB44099_BAJA_B.jpg?v=1732909878&width=720');
+}
+
+.lupe1{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/LD02261GRC03J98_BAJA_B.jpg?v=1732550916&width=720');
+}
+.lupe1:hover{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/LD02261GRC03J98_BAJA_B.jpg?v=1732550916&width=720');
+}
+
+.lu1{
+  position: absolute;
+  left: 17.2em
+}
+
+.lupe2{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/LD02261GRA01F99_BAJA_A.jpg?v=1732550929&width=720');
+}
+.lupe2:hover{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/LD02261GRA01F99_BAJA_B.jpg?v=1732550929&width=720');
+}
+
+.lu2{
+  position: absolute;
+  left: 45em;
+}
+.lupe3{
+  height: 50vh;
+  background-image: url('https://jackiesmith.com/cdn/shop/files/LD02261CRD02P99_BAJA_A.jpg?v=1732550947&width=720');
+}
+.myJackie img{
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+}
+.our-picks-4u p{
+  text-align: center;
+  padding: 3em;
+}
+.slider{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 40vh;
+  margin: auto;
+}
+.sliderBtn{
+  border: none;
+  outline: none;
+  font-size: 3em;
+  background-color: white;
+ 
+}
+.arrow{
+ color: gray;
+}
+.myJackie2{
+  margin: 2px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5em;
+  background-color: black;
+}
+.myJackie2 p{
+  color: white;
+}
+.six-column-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  margin: 10px auto 0 auto;
+}
+.six-column-item1{
+  height: 35vh;
+  background-image: url('https://scontent.cdninstagram.com/v/t39.30808-6/461661384_945066517647836_3109402781287998514_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=18de74&_nc_eui2=AeFPlaBa0d8Smry6XLdcp-gMA-Atu_WIp-wD4C279Yin7NkZc_9axAifidccTk5rX0OTQopb2ZDodGbeIr6Q4B6m&_nc_ohc=PQNT8VyvnvYQ7kNvgG0swtt&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AYAlFogOz3VajdnNYrJRfaLj6EgdAUotWiqBQb311TKqUg&oe=6701B6D3');
+}
+.six-column-item2{
+  height: 35vh;
+  background-image: url('https://scontent.cdninstagram.com/v/t39.30808-6/461440321_18460499794012362_4695613870010402311_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=18de74&_nc_eui2=AeFZp6nGngQBS5fifpnnZQjIewsxdB3CaA57CzF0HcJoDsrNhazswT-JccV45vfMoSEgo8Plup2nSADpxf2Fqazw&_nc_ohc=qU4D-JADyBgQ7kNvgF3zUnV&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AYCoOHSLNzE1OO-bTeLd53yX8ezMzL3u5wtZxHJ_fIvAjA&oe=6701C405');
+}
+.six-column-item3{
+  height: 35vh;
+  background-image: url('https://scontent.cdninstagram.com/v/t39.30808-6/461282630_18460040248012362_2876653739897624427_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=18de74&_nc_eui2=AeEUBl-qoHl8mijzrif7N6-CFQIU0kPcCLcVAhTSQ9wIt0-8E3ZYSkvlhKvP3eXoDsFosNDaWjJkaR_t5vpPgBVW&_nc_ohc=5OSbSjE-vDoQ7kNvgFcsTUT&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AYAn0F7HW1LmX2dy1BsAQ9HkZR0F-_ok3II-hCRGVyDBIg&oe=6701AB7D');
+}
+.six-column-item4{
+  height: 35vh;
+  background-image: url('https://scontent.cdninstagram.com/v/t39.30808-6/461038026_18459737878012362_5079397046263952928_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=18de74&_nc_eui2=AeEMzX6NQabkWUbHg5ae0Yy6ho4bQrVzcrWGjhtCtXNytVWpYKD_UASUmx7sby0RPi-mvTTXN-uH2zgIlkenmbEA&_nc_ohc=QfoCQU1xiroQ7kNvgEuj0YQ&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AYASLw-0GY-DPmwHSGSO3XJNDmF9mnAXruDK9Oan-dc2mw&oe=6701C267');
+}
+.six-column-item5{
+  height: 35vh;
+  background-image: url('https://scontent.cdninstagram.com/v/t39.30808-6/460995145_18459287671012362_1143627251176827107_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=18de74&_nc_eui2=AeH0csUaEVm4pP9Oh7G_fgvPHtNjKvWi7woe02Mq9aLvCktBqBBT7Sq6ZFWs_nJl86wi1Lqm-GWp6GtsQihfPgt6&_nc_ohc=IHbUCxMON5gQ7kNvgH6BKad&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AYCOueski3JhaSsYfftZ5BprNzzU7gc-RReCbiVm4TLTKA&oe=6701AB40');
+}
+.six-column-item6{
+  height: 35vh;
+  background-image: url('https://scontent.cdninstagram.com/v/t51.2885-15/460681781_840967281444224_6133372214485874800_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=18de74&_nc_eui2=AeEUXrEUM9LcREuY6hMt1sQP_AnsFLmnEif8CewUuacSJ9AIUgWjaobtSqPARjo7sssl_LkqUZ2JdeOBYpcSqIfn&_nc_ohc=ju_2SALG3loQ7kNvgEYXIpo&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&oh=00_AYA42rckemy0yj02DwvuZgoci-GWnpCHVDA6KrsrF4qMqA&oe=6701BCBA');
+}
+.bg6{
+  margin: auto;
+  width: 100%;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.spolk{
+  color: white;
+   font-size: 10px; 
+   margin-left: 10px;
+}
+.SHOP-OUR-INSTAGRAM{
+  width: fit-content;
+  background-color: black;
+  margin: auto;
+}
+.SHOP-OUR-INSTAGRAM p{
+ margin: 3em auto;
+ padding: .5em 2.5em ;
+ color: white;
+}
+.journey-roadmap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+ 
+}
+.journey-roadmap img{
+  width: 95%;
+  height: 35vh;
+  margin: auto;
+}
+#subInput {
+  width: 18em;
+  height: 2.8em;
+  outline: none;
+  padding: 0 5px;
+}
+#emailSubErr{
+  position: absolute;
+  left: 40em;
+  bottom: 35em;
+  color: red;
+}
+.borderColor{
+  border: 2px solid red;
+}
+.btn {
+  width: 18em;
+  height: 2.8em;
+  margin-left: 5px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.637);
+}
+
+.div img{
+    width: 100px;
+}
+#ForgetPassword{
+  display: none;
+}
+
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  margin: 1em auto 0 auto;
+  min-height: 100vh;
+  background-color: white;
+}
+.log-in{
+  width: 70%;
+  background-color: white;
+  min-height: 85vh;
+  margin: .5em auto .1em auto;
+
+}
+
+.sign-up{
+  display: block;
+  width: 70%;
+  background-color: white;
+  height: 85vh;
+  margin: .5em auto .1em auto;
+
+}
+.Create-Account{
+  display: none;
+}
+
+.error{
+  position: absolute;
+  top: 29px;
+  right: 5px;
+  color: red 
+}
+
+#closeEye{
+  display: block;
+  position: absolute;
+  top: 6.8px;
+  right: 15px;
+}
+#close{
+  display: block;
+  position: absolute;
+  top: 6.8px;
+  right: 15px;
+}
+#closeP{
+  display: block;
+  position: absolute;
+  top: 6.8px;
+  right: 15px;
+}
+#openEye{
+  display: none;
+  position: absolute;
+  top: 6.8px;
+  right: 15px;
+}
+#open{
+  display: none;
+  position: absolute;
+  top: 6.8px;
+  right: 15px;
+}
+#openP{
+  display: none;
+  position: absolute;
+  top: 6.8px;
+  right: 15px;
+}
+.req{
+  /* display: none; */
+  position: absolute;
+  top: 6.8px;
+  right: 48px;
+  color: red;
+}
+.req2{
+  /* display: none; */
+  position: absolute;
+  top: 10px;
+  right: 48px;
+  color: green;
+}
+.required{
+  position: absolute;
+  top: 10px;
+  right: 48px;
+  color: red;
+}
+
+.login-input-group{
+  position: relative;
+  margin-bottom: 1em;
+}
+label{
+  position: absolute;
+  padding: .3px 5px;
+  top: -1.2em;
+  left: 5px;
+  background-color: white;
+}
+.forgetPassword{
+  position: absolute;
+  top: -1.8em;
+  right: 1.1em;
+}
+.headingDiv{
+width: 80%;
+margin: auto;
+margin-bottom: 2em;
+}
+.headingDiv p, h2{
+text-align: center;
+}
+.headingDiv p{
+font-size: 13px;
+}
+.email{
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 2em;
+  outline: none;
+}
+.addemail{
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 2em;
+  outline: none;
+  border: 1.5px solid red;
+}
+input{
+  -webkit-box-shadow: 0 0 0 30px white inset;
+  box-shadow: inset;
+  border: 1.5px solid;
+  
+}
+#resetSuccess{
+  margin-top: 2em;
+  padding: 3em;
+  box-shadow: -1px 10px 10px 0px rgba(0,0,0,0.91);
+  -webkit-box-shadow: -1px 10px 10px 0px rgba(0,0,0,0.91);
+  -moz-box-shadow: -1px 10px 10px 0px rgba(0,0,0,0.91);
+}
+#resetSuccess2{
+  height: fit-content;
+  margin-top: 3em;
+  width: 70%;
+  padding: 6em .5em;
+  box-shadow: -1px 10px 10px 0px rgba(0,0,0,0.91);
+  -webkit-box-shadow: -1px 10px 10px 0px rgba(0,0,0,0.91);
+  -moz-box-shadow: -1px 10px 10px 0px rgba(0,0,0,0.91);
+}
+#closeBtn{
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  border: none;
+}
+.closeIcon{
+  font-size: 1rem;
+  
+}
+.closeIcon:hover{
+  color: red;
+  
+}
+
+
+.password{
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 1em;
+  outline: none;
+  border: 1.5 solid;
+}
+
+.loginButton{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1.5em;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+}
+.loginButton:hover{
+  background-color: rgba(0, 0, 0, 0.76);
+  
+}
+
+.f-g-container{
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+
+.facebook, .google{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.425);
+  cursor: pointer;
+  margin: 0;
+
+}
+.facebook:hover, .google:hover{
+  background-color: rgba(255, 0, 0, 0.295);
+}
+.facebook, .google p{
+ color: white;
+}
+.firstGrid, .secondGrid{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.mloopo{
+ display: flex;
+ width: 100%;
+ margin-top: 18px;
+ justify-content: center;
+ gap: 10px;
+}
+.mloopo img{
+    width: 100%;
+    gap: 10px;
+}
+/* .mloopo1 img{
+  height: 215px;
+  width: 180px;
+} */
+.mloopo1 {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+}
+
+.mloopo1 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+.image-hover{
+  background-color: white;
+  button{
+    color: white;
+    background-color: white;
+  }
+}
+
+.mloopo1 .image-hover {
+  opacity: 0;
+}
+
+.mloopo1:hover .image-hover {
+  opacity: 1;
+}
+
+.mloopo1:hover .image-original {
+  opacity: 0;
+}
+
+/* .mloopo1:hover{
+  height: 215px;
+  width: 190px;
+ background-color: black;
+} */
+.mloopo2 img{
+  height: 215px;
+  width: 190px;
+}
+.mloopo3 img{
+  height: 215px;
+  width: 190px;
+}
+.mloopo4 img{
+  height: 215px;
+  width: 190px;
+}
+.mloopo5 img{
+  height: 215px;
+  width: 190px;
+}
+.mloopo6 img{
+  height: 215px;
+  width: 190px;
+}
+
+
+footer{
+  width: 100%;
+  height: 60vh;
+  background-color: black;
+}
+.footer-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
+  width: 95%;
+  margin: auto;
+  
+}
+footer p{
+  margin: 3em 0 2em 0;
+  color: white;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.shopLink, .brandLink, .helpLink, .handleLink {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+}
+.shopLink:hover, .brandLink:hover, .helpLink:hover, .handleLink:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.829);
+}
+.underline{
+  color: white;
+  text-decoration: underline;
+}
+.underline:hover{
+  color: rgba(255, 255, 255, 0.76);
+  text-decoration: underline;
+}
+.copy{
+  margin: 3em 0 0 1.2em;
+}
+.hd{
+  font-size: 1.8rem;
+  margin-top: 5px;
+}
+.hd1{
+  margin-left: 7px;
+}
+#overlay1 {
+  position: fixed;
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.87);
+  z-index: 5000;
+  cursor: pointer;
+}
+
+.cart{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    background-color: white;
+    z-index: 2; 
+    box-shadow: 0px -2px 10px 4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px -2px 10px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -2px 10px 4px rgba(0,0,0,0.75);
+}
+.cartHeading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em .8em;
+  border-bottom: 1px solid;
+  width: 90%;
+  margin: auto;
+}
+.cartP{
+  font-size: 1.2rem;
+  letter-spacing: 1;
+  margin: 0;
+  padding: 0;
+}
+.cartB{
+  border: none;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.726);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.cartB:hover{
+ background-color: red;
+ color: white;
+ padding: 0 3px;
+ 
+}
+.cartFooter{
+  position: absolute;
+  top: 460px;
+  border-top: 1px solid;
+  width: 100%;
+}
+.cartFooterP{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+.relativeP{
+  position: relative;
+}
+.checkout{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ padding: 1em;
+ width: 85%;
+ margin: auto;
+ background-color: black;
+ color: white;
+ cursor: pointer;
+ border: none;
+}
+.checkout:hover{
+ background-color: rgba(0, 0, 0, 0.603);
+ color: white;
+ cursor: pointer;
+}
+.cart-items{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ width: 100%;
+ margin: auto;
+ padding: 1em;
+ 
+}
+.overflow{
+  width: 100%;
+  height: 62vh;
+  margin: auto;
+  overflow: auto;  
+}
+.productContainer{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 90%;
+ margin: auto;
+ padding: 0; 
+ /* border-bottom: 1px solid rgba(0, 0, 0, 0.274); */
+}
+.productImg img{
+ width: 4em;
+ height: 4.3em;
+  
+}
+.productBtn{
+  display: flex;
+  align-items: center;
+  
+  margin: 0;
+  padding: 0;
+  background-color: white;
+
+}
+.productBtn i{
+  padding: 1.5px 15px;
+  background-color: white;
+  font-size: 1rem;
+  border: 1px solid;
+  cursor: pointer;
+}
+.productBtn i:hover{
+  padding: 1.5px 15px;
+  color: white;
+  background-color: black;
+ 
+}
+.productBtn p{
+  padding: 1.5px 15px;
+  /* border: 1px solid black; */
+}
+.select-main{
+  margin-top: 120px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.selicon img{
+    width: 20px;
+}
+.selicon{
+  padding-left: 100px;
+}
+.select{
+  padding-right: 100px;
+}
+.selicon button{
+border: 1px solid rgb(183, 183, 183);
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  background-color: white;
+}
+.selicon p{
+  padding-left: 6px;
+    font-size: 20px;
+    font-weight: 200;
+}
+.sel1{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.subtotal{
+  font-size: 14px;
+}
+.subub{
+  font-size: 14px;
+}
+.bumb1{
+  display: flex; align-items: center; justify-content: center;
+}
+.shipping{
+  margin-bottom: 1.5em;
+}
+/* .gloo{
+  display: flex;
+  justify-content: 120px;
+  padding-left: 200px;
+  width: 1000%;
+  justify-content: start;
+
+} */
+.fixe{
+display: flex;
+gap: 30px;
+margin-bottom: 230px;
+}
+.fixe1{
+  background-repeat: no-repeat;
+  background-color: #e6e0e2;
+  height: 599px;
+  width: 200px;
+  
+}
+.floo1 img{
+  width: 100px;
+}
+.floo2{
+  padding-top: 10px;
+  padding-left: 40px;
+}
+.floo2 img{
+  width: 100px;
+}
+.floo1{
+  padding-top: 10px;
+  padding-left: 40px;
+}
+.floo3 img{
+  width: 100px;
+}
+.floo3{
+  padding-top: 10px;
+  padding-left: 40px;
+}
+.floo4 img{
+  width: 100px;
+}
+.floo4{
+  padding-top: 10px;
+  padding-left: 40px;
+}
+.fixe2{
+ /* width: 100%;
+
+ background-repeat: no-repeat;
+ height: 200px; */
+ /* background-size: auto; */
+
+ 
+ background-repeat: no-repeat;
+height: 300px;
+width: 500px;
+img{
+  width: 500px;
+}
+}
+.fiex3{
+  height: 100px;
+  width: 450px;
+  
+}
+.juju{
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 40px;
+}
+.shop{
+ color: blue;
+}
+.pay{
+  background-color: blue;
+  color: white;
+
+}
+.learn{
+  color: black;
+  text-decoration-line: underline;
+}
+.jan{
+  margin-top: 18px;
+  color: black;
+  font-weight: 660;
+  font-size: 14px;
+  border-top: 1px solid black;
+}
+.bhori{
+  display: flex;
+  gap: 20px;
+}
+.bhori{
+  margin-top: 10px;
+}
+.gifted button{
+  border-top: 1px solid #000;
+  border-bottom: 1px solid black;
+  border-left: 1px solid #000;
+  border-right: 1px solid;
+  color: rgb(167, 167, 167);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+ 
+}
+
+.gifted1 button{
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid black;
+  border-left: 2px solid #000;
+  border-right: 2px solid;
+ 
+}
+.add-tocart{
+  margin-top: 10px;
+}
+.tocart button{
+  background-color: black;
+  color: white;
+  padding-left: 159px;
+  padding-right: 170px;
+  padding-top:10px ;
+  padding-bottom: 10px;
+}
+.wishlist button{
+  margin-top: 3px;
+  padding-left: 170px;
+  padding-right: 170px;
+  padding-top:10px ;
+  padding-bottom: 10px;
+}
+.wishlist img{
+  width: 13px;
+}
+.gidcake{
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+.cake img{
+  width: 110px;
+}
+.shio{
+  padding-left: 17px;
+}
+.thepink{
+  font-weight: 500;
+  font-size: 13px
+}
+.prood{
+  margin-top: 20px;
+}
+.workwide{
+  display: flex;
+}
+.workwide1{
+  width: 100px;
+}
+.cla{
+  text-align: center;
+}
+.wordwide1 small{
+  font-size: 12px;
+}
+.wordwide1 p{
+  font-size: 12px;
+}
+.wordwide1{
+  margin-bottom: 10px;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+}
+.colow2 p{
+  color: #ffcddb;
+}
+.colow2{
+  text-align: center;
+  padding-top: 10px;
+}
+.Descripti{
+  overflow: hidden;
+  margin-left: 35.6px;
+  margin-top: 20px;
+}
+.Descripti2 button{
+  overflow: hidden;
+  padding-left: 175px;
+  padding-right: 175px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: none;
+  border-bottom: 0px  rgb(255, 255, 255);
+  background-color: white;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  font-size: 11px;
+}
+.Descripti3 button{
+  padding-left: 139px;
+  padding-right: 144px;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid black;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  font-size: 11px;
+  /* flex-direction: row;
+  width: 100px;
+  padding: 100px; */
+}
+.Descripti4 button{
+  overflow: hidden;
+  padding-left: 181px;
+  padding-right: 183px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  background-color: white;
+  font-size: 11px;
+  border-bottom: 1px solid black;
+}
+
+.koll{
+  text-align: center;
+}
+.koll{
+  img{
+
+    width: 50px;
+  }
+}
+.byi{
+  display: flex; justify-content: center; margin-top: 1.5em;
+}
+.byew{
+  display: flex; align-items: center; margin-left: 5px;
+}
+.blio{
+  line-height: 1;
+}
+.ptage{
+  font-size: 9px;
+   text-align: center; margin-top: 7px;
+}
+.vloppp{
+  font-size: 9px; text-align: center; margin-bottom: 10px;
+}
+.bvbv{
+  text-decoration: underline;
+}
+.termsd{
+  text-decoration: underline;
+}

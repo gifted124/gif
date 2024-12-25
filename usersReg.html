@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="IMG/favicon.PNG" type="image/x-icon">
+    <script src="JS/jQuery.js"></script>
+    <title>jackiesmith.com/clone</title>
+  </head>
+</head>
+<body  onscroll="fixed()">
+  <select name="" id=""></select>
+  <div class="freeShipping" >
+    <x-small>
+      : FREE SHIPPING ALWAYS! 
+    </x-small>
+ </div>
+ <header class="none">
+  <div class="languageSelect">
+    <img src="IMG/usa flag icon.PNG" alt="lang Icon" height="22" width="22"  class="langIcon"/>|
+    <span>English</span>
+    <i class="fa fa-angle-down down"></i>
+    <!-- <i class="fa fa-angle-up up"></i> -->
+  </div>
+
+  <div class="logo">
+  <a href="index.html" class="logoTxt">JACKIE SMITH</a>
+  </div>
+
+  <div class="linkIcon">
+    <a href="usersReg.html"><img src="./IMG/icons8-user-50.png" alt=""></i></a>
+    <a href="#"><img src="IMG/icons8-search-50.png" alt=""></a>
+    <a href="#"><img src="./IMG/icons8-love-30.png" alt=""></a>
+    <a href="#" class="mm"><img src="./IMG/icons8-shopping-bag-50.png" onclick="showCart()" alt=""> <div  class="fh"></div></a >
+  </div>
+</header>
+<div class="mobile mobileHeader">
+  <div>
+    <i class="fa-solid fa-bars"></i>
+    <i class="fa-regular fa-heart"></i>
+  </div>
+
+  <div class="logo">
+    <a href="index.html" class="logoTxt">JACKIE SMITH</a>
+  </div>
+
+    <div>
+      <i class="fa-sharp fa-regular fa-user"></i>
+      <i class="fa fa-shopping-bag" style="color: rgb(128, 128, 128);"></i>
+    </div>
+</div>
+
+<div class="mobile searchDiv">
+  <input type="text"  placeholder="search" class="mobile mobileSearch">
+</div>
+
+
+
+<section>
+  <div class="log-in" id="Log-in-page">
+    <!-- login starts -->
+     <div class="loginDiv" id="loginDiv">
+      <div class="headingDiv">
+        <h2>Login</h2>
+        <p>By signing you will be able to know the status of your orders, the products saved in your Wishlist and your Jackie Club Points available to redeem them for discounts
+        </p>
+     </div>
+     
+     <form id="login">
+      <div class="error"></div>
+        <div class="login-input-group">
+          <label>Email</label>
+          <input type="email" class="email" id="email">
+          <i class="fas fa-exclamation-circle req" id="emailex" style="display: none;"></i>
+          <i class="fa-solid fa-circle-check req2" id="emailex1" style="display: none;"></i>
+          <small id="emailErr" class="error"></small>
+        </div>
+  
+        <div class="login-input-group">
+          <label>Password</label> <a href="#" class="forgetPassword" onclick="forgetPassword()">Forget Password?</a>
+          <input type="password" class="password" id="password">
+          <i class="fas fa-exclamation-circle req" id="passex" style="display: none;"></i>
+          <i class="fa fa-eye-slash" id="closeP" onclick="s()"></i>
+           <i class="fa fa-eye" id="openP" onclick="h()"></i>
+          <small id="passwordErr" class="error"></small>
+        </div>
+        <button class="loginButton" id="loginButton">SIGN IN</button>
+     </form>
+  
+  
+     <div class="f-g-container">
+  
+        <div class="facebook" onclick="facebook()">
+          <p>Facebook Login</p>
+          <p><i class="fa-brands fa-facebook-f"></i></p>
+        </div>
+  
+        <div class="google" onclick="google()">
+        <p>Google Login</p>
+        <p><i class="fa-brands fa-google"></i></p>
+        </div>
+      </div>
+      
+      <div class="byi">
+        <div><input type="checkbox"></div>
+        <div class="byew">
+          <small class="blio">By clicking any of the social login buttons you agree to the terms of privacy policy described here</a></small>
+        </div>
+      </div>
+     </div>
+    <!-- login end -->
+
+     <!-- show forget password start here -->
+
+  <div id="ForgetPassword">
+    
+    <div class="headingDiv">
+       <h2>Reset your password</h2>
+       <p>We will send you an email to reset your password.</p>
+    </div>
+    
+    <form id="resetForm">   
+       <div class="login-input-group" style="margin-bottom: .5em;">
+         <label>Email</label>
+         <input type="email" class="email" id="emailReset">
+         <i class="fas fa-exclamation-circle req" id="resetP" style="display: none;"></i>
+         <small id="emailErrReset" class="error"></small>
+       </div>
+
+       <div style="display: flex; gap: 5px; margin-top: .5em;">
+        <button class="loginButton" id="passwordReset">SUBMIT</button>
+        <button class="loginButton" onclick="hideReset()" style="border: 1.5px solid rgba(0, 0, 0, 0.589); background-color: white; color: black;">CANCEL</button>
+       </div> 
+    </form>  
+   </div>
+
+   <div id="resetSuccess" style="display: none; position: relative;">
+    <button id="closeBtn" onclick="closePage()"><i class="fa fa-window-close closeIcon" id="closeIcon"></i></button>
+
+    <div><h2>Password Reset Email Sent</h2></div>
+   <center style="margin: 1.5em;"> <i style="font-size: 3em; color: green;" class="fas fa-check-circle"></i></center>
+    <div>
+      <p style="text-align: center;">Check your inbox/Spam for the reset link</p>
+      <p style="text-align: center;">Still having trouble logging in <a href="#" style="color: blue; text-decoration: underline;">Contact us</a></p>
+    </div>
+   </div>
+  <!-- show forget password end here -->
+  </div>
+
+  <div class="sign-up" id="showRegister">
+    <div class="headingDiv">
+      <h2 style="font-size: 1.2rem;">FIRST TIME AT JACKIE SMITH?</h2>
+      <p>Create your account, it´s free and you can earn Jackie Club Points in many ways, which you can then redeem for discounts.
+      </p>
+   </div>
+
+   <div class="firstGrid">
+
+    <div  class="koll">
+      <div  class="mlook"><img src="https://jackiesmith.com/cdn/shop/t/63/assets/login-03.webp?v=108513957588694152101705953309" alt="" height="65" width="100"></div>
+      <div><p style="font-size: 11px; text-align: center;">START EARNING <br> POINTS TODAY!</p></div>
+    </div>
+
+    <div class="koll">
+      <div  class="mlook"><img src="https://jackiesmith.com/cdn/shop/t/63/assets/login-01.webp?v=73631482870352949871705953309" alt="" height="65" width="100"></div>
+      <div><p style="font-size: 11px; text-align: center;">FREE WORLDWIDE <br> SHIPPING!</p></div>
+    </div>
+
+    <div  class="koll">
+      <div  class="mlook"><img src="https://jackiesmith.com/cdn/shop/t/63/assets/login-02.webp?v=175560866244423763761705953309" alt="" height="65" width="100"></div>
+      <div><p style="font-size: 11px; text-align: center;">Buy now, Pay later</p></div>
+    </div>
+   
+   </div>
+  <!-- second grid starts here -->
+
+  <div class="secondGrid">
+
+    <div class="koll">
+      <div  class="mlook"><img src="https://jackiesmith.com/cdn/shop/t/63/assets/login-04.webp?v=110611009718472849801705953309" alt="" height="65" width="100"></div>
+      <div><p style="font-size: 11px; text-align: center;">Contact us!</p></div>
+    </div>
+
+    <div class="koll">
+      <div class="mlook"><img src="https://jackiesmith.com/cdn/shop/t/63/assets/login-05.webp?v=38786519136878682481705953309" alt="" height="65" width="100"></div>
+      <div><p style="font-size: 11px; text-align: center;">FREE RETURNS ON ALL <br> U.S. ORDERS!</p></div>
+    </div>
+
+    <div class="koll">
+      <div class="mlook"><img src="https://jackiesmith.com/cdn/shop/t/63/assets/login-06.webp?v=67739636448898888301705953309" alt="" height="65" width="100"></div>
+      <div><p style="font-size: 11px; text-align: center;">wishlist</p></div>
+    </div>
+   
+   </div>
+   <button class="loginButton" onclick="showCreate()" style="margin-top: 2em; padding: 1em;">CREATE ACCOUNT</button>
+  </div>
+
+  <div class=" log-in Create-Account" id="hideRegister">
+    
+    <div class="headingDiv">
+       <h2>Create Account</h2>
+       <p>Create your account, it´s free and you can earn Jackie Club Points in many ways, which you can then redeem for discounts.
+       </p>
+    </div>
+     
+   </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="column1 column">
+      <p>SHOP</p>
+      <small class="shop"><a href="#" class="shopLink">BAGS</a></small>
+      <small class="shop"><a href="#" class="shopLink">ACCESSORIES</a></small>
+      <small class="shop"><a href="#" class="shopLink">CLOTHING</a></small>
+      <small class="shop"><a href="#" class="shopLink">SHOES</a></small>
+      <small class="shop"><a href="#" class="shopLink">E-GIFT CARD</a></small>
+    </div>
+
+    <div class="column2 column">
+      <P>BRAND</P>
+      
+        <small class="brand"><a href="#" class="brandLink">HISTORY</a></small>
+        <small class="brand"><a href="#" class="brandLink">MAKE IT BEAUTIFUL</a></small>
+        <small class="brand"><a href="#" class="brandLink">CUSTOM SHOP</a></small>
+        <small class="brand"><a href="#" class="brandLink">OUR STORES</a></small>
+    
+    </div>
+
+    <div class="column3 column">
+      <P>HELP</P>
+        <small class="help"><a href="#" class="helpLink">CUSTOMER SERVICE HELP CENTER</a></small>
+        <small class="help"><a href="merchantsReg.html" class="helpLink">ADMIN</a></small>
+        <small class="help"><a href="#" class="helpLink">TRACK MY ORDER</a></small>
+        <small class="help"><a href="#" class="helpLink">SHIPPING</a></small>
+        <small class="help"><a href="#" class="helpLink">RETURNS</a></small>
+        <small class="help"><a href="#" class="helpLink">TERMS AND CONDITIONS</a></small>
+        <small class="help"><a href="#" class="helpLink">PRIVACY POLICY</a></small>
+    </div>
+
+    <div class="column4 column">
+      <P>DESTINATION AND <br>CURRENCY</P>
+     <img src="IMG/languageSelect.PNG" alt="" width="120" height="25">
+    </div>
+
+    <div class="column5 column">
+      <p>NEED TO CONTACT US?</p>
+      <small><a href="#" class="underline">CUSTOMER SERVICE TEAM</a></small>
+      <div class="socialHandle">
+          <small class="socialHandle"><a href="#" class="handleLink"><i class="fa-brands fa-instagram hd"></i></a></small>
+          <small class="socialHandle"><a href="#" class="handleLink"><i class="fa-brands fa-facebook-f hd hd1"></i></a></small>
+          <small class="socialHandle"><a href="#" class="handleLink"><i class="fa-brands fa-pinterest-p hd hd1"></i></a></small>
+      </div>
+    </div>
+  </div>
+  <div class="copy">
+    <small style="color: white; font-size: 10px; margin-left: 10px;">COPYRIGHT © JACKIE SMITH 2023. TODOS LOS DERECHOS RESERVADOS.</small>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+<div class="cart" id="cartDiv">
+  <div class="relativeP">
+      <div class="cartHeading ">
+        <p class="cartP">CART</p>
+        <button class="cartB" onclick="hideCart()">X</button>
+      </div>
+
+
+ <div class="overflow">
+  <div class="cart-items">
+    <div id="productName">Product Name</div>
+  
+    <div class="productContainer">
+      <div class="productImg"><img src="https://cdn.shopify.com/s/files/1/0491/4541/3794/files/CN02279SFA90N99_BAJA_A_1080x.jpg?v=1728072066" alt="">
+      </div>
+  
+      <div class="productBtn">
+        <i class="fa-solid fa-minus" id="subBtn"></i>
+        <P id="qty">2</P>
+        <i class="fa-solid fa-plus" id="addBtn"></i>
+      </div>
+      <div class="productPrice">$100</div>
+    </div>
+  </div>
+
+
+
+  
+      <div class="cartFooter">
+        <div class="cartFooterP">
+          <p style="font-size: 14px;">SubTotal</p>
+          <p style="font-size: 14px;">$200</p>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+          <small style="margin-bottom: 1.5em;">Shipping, taxes, and discount codes calculated at checkout.</small>
+        </div>
+        <button class="checkout" id="checkout">CHECKOUT</button>
+      </div>
+    </div>
+   
+  </div>
+
+
+  <script src="JS/script.js"></script>
+  <script src="JS/passwordReset.js"></script>
+</body>
+</html>
